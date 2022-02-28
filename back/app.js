@@ -17,7 +17,7 @@ const reqUser = require('./routes/User');
 const app = express();
 
 //Accès à la BDD MongoDB
-mongoose.connect('mongodb+srv://p6user1:p6user1@cluster0.seayg.mongodb.net/Data0?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://<USER>:<PASSWORD>@cluster0.seayg.mongodb.net/Data0?retryWrites=true&w=majority', {
         useNewUrlParser: true, useUnifiedTopology: true
     })
     .then(() => console.log('Connexion à MongoDB réussie !'))
